@@ -3,7 +3,7 @@
 > **Prueba técnica · Ficha ADSO 3145556**
 > Entrega: **martes 13 de octubre de 2026, a las 5:00 p. m.** (17:00, hora Colombia).
 
-Este repositorio es el **sitio público estático** de presentación de *Manager Library*; no habla con la API. **Empieza vacío a propósito**: se construye en el fork de cada aprendiz.
+Este repositorio es el **sitio público estático** de presentación de *Manager Library*; no habla con la API. Contiene `index.html` y `styles.css`: HTML y CSS estáticos, sin JavaScript ni llamadas a la API (T-23). Se abre directamente en el navegador y se adapta a móvil y escritorio.
 
 ## Instrucciones
 

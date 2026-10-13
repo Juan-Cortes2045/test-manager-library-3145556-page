@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manager Library</title>
+  <meta name="description" content="Manager Library: catálogo, socios y préstamos para una biblioteca pequeña.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="tag">Prueba técnica · Ficha ADSO 3145556</p>
+      <h1>Manager Library</h1>
+      <p class="lead">Un sistema para que una biblioteca pequeña lleve su catálogo de libros, sus socios y sus préstamos, y vea qué libros se prestan más.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="que-hace">
+      <h2 id="que-hace">Qué hace</h2>
+      <ul class="grid">
+        <li class="card"><h3>Catálogo</h3><p>Libros con título, autor, ISBN de 13 dígitos, una de cinco categorías fijas, ejemplares y portada opcional. Baja lógica: el historial no se pierde.</p></li>
+        <li class="card"><h3>Socios</h3><p>Personas que piden libros prestados, con nombre y documento único. No inician sesión.</p></li>
+        <li class="card"><h3>Préstamos</h3><p>De 1 a 3 libros por préstamo, con vencimiento a 14 días. Máximo 3 libros sin devolver por socio; quien tenga vencidos no pide más.</p></li>
+        <li class="card"><h3>Devoluciones</h3><p>Se devuelve un libro a la vez y nunca se suma dos veces. El préstamo se cierra cuando todo vuelve.</p></li>
+        <li class="card"><h3>Vencidos</h3><p>Lista de libros sin devolver con su retraso en días, del más atrasado al menos.</p></li>
+        <li class="card"><h3>Más prestados</h3><p>Reporte por rango de fechas que conserva el título y la categoría del momento del préstamo.</p></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="roles">
+      <h2 id="roles">Quién lo usa</h2>
+      <dl class="roles">
+        <div><dt>Administrador</dt><dd>Mantiene el catálogo y los socios, da de alta bibliotecarios y ve los reportes.</dd></div>
+        <div><dt>Bibliotecario</dt><dd>Registra préstamos y devoluciones, y consulta catálogo, socios y vencidos.</dd></div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="como">
+      <h2 id="como">Cómo está hecho</h2>
+      <p>Desarrollo guiado por especificación (SDD): el spec define las reglas y el contrato; el backend en Laravel y el frontend en React lo implementan sin cambiar el modelo de datos.</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Manager Library · Ficha ADSO 3145556 · 2026</p>
+  </footer>
+</body>
+</html>
